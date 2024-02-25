@@ -9,6 +9,8 @@ const onlineMessages = ['ARCADE VIENT DE SE CONNECTER !!! ALLEZ LE SPAMMMMMMMMMM
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}`);
+    const channel = client.channels.cache.get(channelId);
+    channel.send('Je viens de démarrer ! Je suis prêt à stalker Arcade !');
 });
 
 client.on('presenceUpdate', (oldPresence, newPresence) => {
