@@ -9,6 +9,7 @@ const onlineMessages = ['ARCADE VIENT DE SE CONNECTER !!! ALLEZ LE SPAMMMMMMMMMM
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}`);
+    client.user.setActivity('Arcade', { type: 'WATCHING' });
 });
 
 client.on('presenceUpdate', (oldPresence, newPresence) => {
@@ -32,4 +33,4 @@ process.on('uncaughtException', function (err) {
 });
 
 
-client.login('MTIxMDk1OTc2MTc4NTQ5MTQ4Ng.GoB99V.LMMlJzL6rWLGaw2MBy8CJsdFIDPVNEViuI1olQ'); 
+client.login('token'); 
